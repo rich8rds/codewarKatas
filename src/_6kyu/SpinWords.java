@@ -17,7 +17,7 @@ public class SpinWords {
         String result = "";
         for(String str : sentArr) {
             if(str.length() > 4)
-                result += (new StringBuilder(str)).reverse().toString() + " ";
+                result += (new StringBuilder(str)).reverse() + " ";
             else result += str + " ";
         }
         return result.trim();
