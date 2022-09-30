@@ -1,4 +1,4 @@
-package _6kyu;
+package codewars._6kyu;
 //Stop gninnipS My sdroW!
 //Write a function that takes in a string of one or more words, and returns the same string,
 //but with all five or more letter words reversed (Just like the name of this Kata).
@@ -14,13 +14,13 @@ public class SpinWords {
     public String spinWords(String sentence) {
         String[] sentArr = sentence.split(" ");
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for(String str : sentArr) {
             if(str.length() > 4)
-                result += (new StringBuilder(str)).reverse() + " ";
-            else result += str + " ";
+                result.append((new StringBuilder(str)).reverse()).append(" ");
+            else result.append(str).append(" ");
         }
-        return result.trim();
+        return result.toString().trim();
     }
 }
 

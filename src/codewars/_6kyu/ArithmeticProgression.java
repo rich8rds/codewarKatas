@@ -1,4 +1,4 @@
-package _6kyu;
+package codewars._6kyu;
 //An Arithmetic Progression is defined as one in which there is a
 //constant difference between the consecutive terms of a given series of numbers.
 //You are provided with consecutive elements of an Arithmetic Progression.
@@ -20,8 +20,10 @@ public class ArithmeticProgression {
                 1914, 2290, 2478, 2666, 2854, 3042, 3230, 3418}; //expect: <2102>
         int[] numbers2 = new int[] {-86, -154, -222, -290, -358, -426, -494, -562, -698,
                 -766, -834, -902, -970, -1038, -1106, -1174}; //expect: <-630>
+
         System.out.println(findMissing(numbers));
         System.out.println(findMissing(numbers2));
+
     }
     public static int findMissing(int[] numbers) {
         int progression = 0;

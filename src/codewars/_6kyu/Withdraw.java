@@ -1,4 +1,4 @@
-package _6kyu;
+package codewars._6kyu;
 //Task
 //    An ATM ran out of 10 dollar bills and only has 100, 50 and 20 dollar bills.
 //
@@ -21,6 +21,7 @@ package _6kyu;
 
 public class Withdraw {
     public static int[] withdraw(int amount) {
+
         int bill_100 = 0;
         int bill_50 = 0;
         int bill_20 = 0;
